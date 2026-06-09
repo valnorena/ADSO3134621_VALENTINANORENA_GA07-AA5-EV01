@@ -1,0 +1,13 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno (no se suben datos sensibles al repositorio)
+.env
+
+# Logs
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
