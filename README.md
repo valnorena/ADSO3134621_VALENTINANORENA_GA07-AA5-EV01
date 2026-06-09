@@ -46,3 +46,16 @@ El servidor queda disponible en: `http://localhost:4000`
   "password": "123456"
 }
 ```
+
+## Instalación y ejecución
+
+### Backend
+cd backend
+npm install            # instala las dependencias
+cp .env.example .env   # crea el archivo de configuración
+npm start              # inicia el servidor en http://localhost:4000
+
+### Frontend
+cd frontend
+npm install            # instala las dependencias
+npm start              # abre la app en http://localhost:3000
