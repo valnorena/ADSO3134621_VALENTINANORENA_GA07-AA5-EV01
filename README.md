@@ -28,20 +28,6 @@ devuelve un token `JWT`.
 - Node.js instalado (`node -v`)
 - MongoDB Community Server en ejecución (`mongod`)
 
-## Instalación y ejecución
-
-```bash
-# 1. Instalar dependencias
-npm install
-
-# 2. Crear el archivo .env a partir del ejemplo
-copy .env.example .env      # Windows
-# cp .env.example .env      # Linux / Mac
-
-# 3. Iniciar el servidor
-npm start
-```
-
 El servidor queda disponible en: `http://localhost:4000`
 
 ## Endpoints
@@ -60,16 +46,3 @@ El servidor queda disponible en: `http://localhost:4000`
   "password": "123456"
 }
 ```
-
-## Versionamiento (Git)
-
-```bash
-git init
-git add .
-git commit -m "Servicio de registro e inicio de sesion AA5-EV01"
-git remote add origin <URL_DEL_REPOSITORIO>
-git push origin main
-```
-
-> Recuerda reemplazar `<URL_DEL_REPOSITORIO>` por el enlace de tu repositorio
-> en GitHub y añadir el enlace en la carpeta de entrega.
