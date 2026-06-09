@@ -72,7 +72,7 @@ npm start              # abre la app en http://localhost:3000
 git init
 git add .
 git commit -m "Servicio de registro e inicio de sesion AA5-EV01"
-git remote add origin <URL_DEL_REPOSITORIO>
+git remote add origin https://github.com/valnorena/ADSO3134621_VALENTINANORENA_GA07-AA5-EV01
 git branch -M main
 git push -u origin main
 ```
