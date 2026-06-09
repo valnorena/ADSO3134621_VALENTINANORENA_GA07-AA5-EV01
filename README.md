@@ -14,7 +14,7 @@ Servicio web (API REST) que expone dos operaciones de autenticación:
   en caso contrario, devuelve **error en la autenticación**.
 
 Las contraseñas se almacenan cifradas con `bcryptjs` y el inicio de sesión
-devuelve un token `JWT`.
+devuelve un token `JWT`. El proyecto incluye un frontend en **React** que consume la API.
 
 ## Tecnologías
 
@@ -22,22 +22,41 @@ devuelve un token `JWT`.
 - MongoDB + Mongoose (persistencia)
 - bcryptjs (cifrado de contraseñas)
 - jsonwebtoken (token de sesión)
+- React (frontend)
 
 ## Requisitos previos
 
 - Node.js instalado (`node -v`)
-- MongoDB Community Server en ejecución (`mongod`)
+- MongoDB Community Server en ejecución
+- Tener dos terminales disponibles (una para backend, otra para frontend)
 
-El servidor queda disponible en: `http://localhost:4000`
+## Instalación y ejecución
+
+### Backend
+
+```bash
+cd backend
+npm install            # instala las dependencias
+cp .env.example .env   # crea el archivo de configuración
+npm start              # inicia el servidor en http://localhost:4000
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install            # instala las dependencias
+npm start              # abre la app en http://localhost:3000
+```
 
 ## Endpoints
 
-| Método | Ruta                  | Descripción                  |
-|--------|-----------------------|------------------------------|
-| POST   | `/api/auth/registro`  | Registra un nuevo usuario    |
-| POST   | `/api/auth/login`     | Inicia sesión y entrega token|
+| Método | Ruta                  | Descripción                   |
+|--------|-----------------------|-------------------------------|
+| POST   | `/api/auth/registro`  | Registra un nuevo usuario     |
+| POST   | `/api/auth/login`     | Inicia sesión y entrega token |
 
-### Ejemplo de body (registro / login)
+### Ejemplo de body (registro)
 
 ```json
 {
@@ -47,15 +66,13 @@ El servidor queda disponible en: `http://localhost:4000`
 }
 ```
 
-## Instalación y ejecución
+## Versionamiento (Git)
 
-### Backend
-cd backend
-npm install            # instala las dependencias
-cp .env.example .env   # crea el archivo de configuración
-npm start              # inicia el servidor en http://localhost:4000
-
-### Frontend
-cd frontend
-npm install            # instala las dependencias
-npm start              # abre la app en http://localhost:3000
+```bash
+git init
+git add .
+git commit -m "Servicio de registro e inicio de sesion AA5-EV01"
+git remote add origin <URL_DEL_REPOSITORIO>
+git branch -M main
+git push -u origin main
+```
